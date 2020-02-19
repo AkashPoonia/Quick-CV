@@ -1,0 +1,194 @@
+<html>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <head>
+        <title>Enter your details</title>
+    </head>
+
+    <style>
+        body
+        {
+            background-color: lightcyan;
+            padding: 15px;
+        }
+        h1
+        {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        h3
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input
+        {
+            
+        }
+        .summary
+        {
+            width: 50pc;
+            height: 10pc;
+            max-lines: 5;
+            
+        }
+        .box
+        {
+            width: 30pc;
+        }
+        .box1
+        {
+            width: 20pc;
+        }
+
+        hr{
+            background-color: brown;
+        }
+        
+
+        
+        
+    
+    
+    
+    
+    
+    </style>
+    <script>
+        var n1,n2,y1,y2,ad,em,ln,cl,sh,tp,sm,num,a;
+        function submit()
+        {
+            n1=document.getElementById("fname").value;
+            n2=document.getElementById("lname").value;
+            ad=document.getElementById("addr").value;
+            y1=document.getElementById("year1").value;
+            y2=document.getElementById("year2").value;
+            em=document.getElementById("email").value;
+            ln=document.getElementById("lkdin").value;
+            cl=document.getElementById("col").value;
+            sh=document.getElementById("school").value;
+            tp=document.getElementById("tp1").value;
+            sm=document.getElementById("sm").value;
+            num=document.getElementById("mno").value;
+
+            a=num.length;
+            if(a!=10)
+            window.alert("fill up mobile number");
+
+            var elem=document.getElementById("show");
+            elem.parentNode.removeChild(elem);
+        }
+    </script>
+
+
+    <body>
+            <div class="w3-container w3-green">
+        <br>
+        
+        <h1>GREAT JOB!! YOU ARE JUST ONE STEP AWAY TO YOUR INTERVIEW!</h1>
+        <br>
+        
+        </div>
+
+        <form onsubmit="submit()" id="show">
+                <h2>Enter your details</h2>
+                <br>
+            <h3>PERSONAL DETAILS:</h3>
+            <p>First Name.......: 
+            <input type="text" placeholder="Enter first name" class="box1" id="fname">
+            </p>
+            <p>Last Name.......:
+            <input type="text" placeholder="Enter last name" class="box1" id="lname">
+            </p>
+            <p>Address...........:
+            <input type="text" placeholder="Enter Address" class="box" id="addr">
+            </p>
+            <p>Mobile Number:
+            <input type="text" placeholder="Enter Mobile number" class="box1" id="mno">
+            </p>
+            <p>Email...............:
+            <input type="email" placeholder="Enter E-mail" class="box1" id="email">
+            </p>
+            <p>Linked-in URL.:
+            <input type="url" placeholder="Enter URL" class="box" id="lkdin">
+            </p>
+            <hr>
+            
+            <h3>EDUCATION:</h3>
+            <p>Name of College/University..........:
+            <input type="text" placeholder="Enter institute name" class="box" id="col">
+            </p>
+            <p>Year of completion (or expected).:
+            <input type="text" placeholder="Enter Year" id="yearc">
+            </p>
+            <p>Name of High School ..................:
+            <input type="text" placeholder="Enter School name" class="box" id="school">
+            </p>
+            <p>Year of completion.......................:
+            <input type="text" placeholder="Enter Year" id="years">
+            </p>
+            <hr>
+            
+            <h3>PROJECTS</h3>
+            
+            <p> Name of Project:
+            <input type="text" placeholder="Enter topic" class="box" id="tp1">
+            </p>
+            <p>Short summary...:
+            <input type="text" placeholder="Type a short summary in less than 50 words" class="summary" id="sm"> 
+            </p>
+            <hr>
+            <br>
+            <h3>AREAS OF RESPONSIBILITY</h3>
+            <br>
+            <p>Enter a resposbility</p>
+            <input type="text" placeholder="Enter responsibility" class="box">
+            <br>
+            <p>Enter another responsibility</p>
+            <input type="text" placeholder="Enter responsibilty" class="box">
+            <br><br>
+            <hr>
+            
+            <h3>CERTIFICATIONS</h3>
+            <br>
+            <p>Online</p>
+            <input type="text" placeholder="Online certification" class="box">
+            <br>
+            <p>Offline</p>
+            <input type="text" placeholder="Offline certification" class="box">
+            <br>
+            <br>
+            <hr>
+            
+            <h3>LANGUAGES KNOWN</h3>
+            <br>
+            <input type="text" placeholder="Enter languages" class="box">
+            <br><br><br><br><br>
+
+
+
+
+            <input type="submit" placeholder="SUBMIT">
+
+
+
+
+
+
+        </form>
+
+        
+        
+
+
+
+
+    </body>
+</html>
